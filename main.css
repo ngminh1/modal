@@ -1,0 +1,143 @@
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* css */
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, rgb(66,88,208), rgb(201,81,191), rgb(255,204,112));
+}
+
+.hide {
+    display: none;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__btn {
+    width: 190px;
+    height: 64px;
+    font-size: 24px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: fixed;
+}
+.modal__btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal__wrap {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal {
+    width: 450px;
+    position: fixed;
+    top: 35%;
+    right: 35%;
+    animation: show 0.4s linear;
+}
+
+.modal__heading {
+    width: 450px;
+    height: 50px;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(226,110,112);
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal__heading p {
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.modal__heading i {
+    margin-right: 10px;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.modal__heading i:hover {
+    opacity: 0.5;
+}
+
+.modal__body {
+    background-color: rgb(255,255,255);
+}
+
+.modal__body p {
+    margin: 0;
+    font-size: 24px;
+    color: rgb(226,110,112);
+    padding: 15px;
+    min-height: 100px;
+}
+
+.modal__footer {
+    background-color: #fff;
+    min-height: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modal__footer button {
+    color: #fff;
+    background-color: rgb(226,110,112);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: right;
+    margin-right: 15px;
+    float: right;
+}
+
+.modal__footer button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+@keyframes show {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    transition: 0.6s linear;
+}

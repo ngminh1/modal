@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./main.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="modal__btn" class="wrap">
+        <button id="modal__btn" class="modal__btn">Open Modal</button>
+    </div>
+    <div id="modal__wrap" class="modal__wrap">
+        <div id="modal__overlay" class="modal-overlay"></div>
+        <div class="modal">
+            <div class="modal__heading">
+                <p>Welcome</p>
+                <i id="hide-icon" class='bx bx-x'></i>
+            </div>
+            <div class="modal__body">
+                <p>Modal</p>
+            </div>
+            <div class="modal__footer">
+                <button id="btn-hide" >Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
